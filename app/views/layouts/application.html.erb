@@ -7,18 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to 'Home', root_path %></li>
+  <li role="presentation"><%= link_to 'Tweets', tweets_index_path %></li>
+  <li role="presentation"><%= link_to 'New Tweet', new_tweet_path %></li>
+</ul> 
 
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
 
-<!-- The Devise code from TTS -->
+
 <!-- Devise notice/alert -->
-<!-- <p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p> -->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
