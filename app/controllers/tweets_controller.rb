@@ -1,6 +1,9 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:show, :edit, :update, :destroy]
 
+  # Authenticate with Devise
+  before_filter :authenticate_user!
+
   # GET /tweets
   # GET /tweets.json
   def index
