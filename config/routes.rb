@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'home' => 'welcome/index'
+  get 'home' => 'welcome#index'
 
   get 'tweets/index' => 'tweets#index'
 
