@@ -1,3 +1,23 @@
+
+
+<% if user_signed_in? %>
+<% if current_user.tweets.empty? %>
+	<p>No tweets yet!</p>
+	<p>Start tweeting:</p>
+	<div class="tweet-box container">
+		<% render 'tweets/form' %>
+	</div>
+	<% else %>
+	<div class="tweet-box container">
+		<% render 'tweets/form' %>
+	</div>
+	<% current_user.tweets.each do |tweet| %>
+		<p><%= tweet.message %></p>
+	<% end %>
+<% end %>
+
+<% else %>
+
 <h1>Tweeter...<small>Chirp Chirp</small></h1>
 <div class="container" class="welcome-intro">
   <div class="row vertical-center-row">
@@ -31,27 +51,9 @@
 	</div>
 </div>
 
+<div class="container">
 
-<!-- 
-<% if user_signed_in? %>
-<% if current_user.tweets.empty? %>
-	<p>No tweets yet!</p>
-	<p>Start tweeting:</p>
-	<div class="tweet-box container">
-		<% render 'tweets/form' %>
-	</div>
-	<% else %>
-	<div class="tweet-box container">
-		<% render 'tweets/form' %>
-	</div>
-	<% current_user.tweets.each do |tweet| %>
-		<p><%= tweet.message %></p>
-	<% end %>
-<% end %>
-
-<% else %>
+</div>
 
 
 <% end %>
-
- -->
