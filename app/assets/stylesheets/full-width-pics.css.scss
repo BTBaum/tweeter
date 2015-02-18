@@ -9,6 +9,28 @@
  /* Signout btn Pink #FF0066 */
  /* Lime Green for tweet text #00FF00 */
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+h2, .btn-default {
+    text-align: center;
+    position: center;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.welcome-intro {
+    text-align: center;
+}
+
+.btn-default {
+    text-align: center;
+}
 
 body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -17,11 +39,14 @@ body {
     position: auto; 
 }
 
+/* Color for navigation text */
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav  > li > a {
     color: #5475D6;
 }
 
+/* Color for nav signout button when active */
+.btn-btn-default, .btn-default, 
 .btn-warning:hover, .btn-warning:focus, 
 .btn-warning.focus, .btn-warning:active, .btn-warning.active, 
 .open > .btn-warning.dropdown-toggle {
@@ -30,6 +55,8 @@ body {
     color: #FFF;
 } 
 
+/* Color for nav signout button */
+.btn-btn-default, .btn-default,
 .btn-warning {
     background-color: #5475D6;
     border-color: #00FF00;
