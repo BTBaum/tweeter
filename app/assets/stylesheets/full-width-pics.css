@@ -14,6 +14,7 @@ body {
     margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     color: #00FF00;
     background-color: #333;
+    position: auto; 
 }
 
 .navbar-inverse .navbar-brand,
@@ -25,10 +26,14 @@ body {
 .btn-warning.focus, .btn-warning:active, .btn-warning.active, 
 .open > .btn-warning.dropdown-toggle {
     background-color: #FF0066;
+    border-color: #00FF00 ;
+    color: #FFF;
 } 
 
 .btn-warning {
     background-color: #5475D6;
+    border-color: #00FF00;
+    margin: 8px;
 }
 
 .image-bg-fluid-height,
